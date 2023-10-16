@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurassic Park</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <style>
+        body {
+            background-color: rgb(249, 250, 209); /* Cambia este valor al color que desees */
+          }
         .image-container {
             display: flex; /* Hace que los elementos hijos se coloquen en una fila */
             justify-content: space-between; /* Distribuye las imágenes horizontalmente */
@@ -19,6 +23,20 @@
         .centered-title {
             text-align: center;
         }
+        .contenedor {
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            height: 300px; /* Establece la altura del contenedor según tus necesidades */
+          }
+        .card {
+            /* Estilos de tu tarjeta, por ejemplo: */
+            width: 300px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
     <body>
@@ -31,7 +49,7 @@
                         class = "img-fluid"
                     />
                 </div>
-                <div calss = "col-7">
+                <div class = "col-7">
                     <p>
                         ¡Explora el asombroso mundo de los dinosaurios en Jurassic Park!
                         Sumérgete en una aventura prehistórica única mientras te adentras en un paisaje donde los dinosaurios
@@ -49,6 +67,7 @@
                     </p>
                 </div>
             </div>
+        </div>
             <h2 class="centered-title">Conoce nuestros planes de viaje</h2>
             
             <div class="image-container">
@@ -62,11 +81,12 @@
                 <img src="https://images.pexels.com/photos/5480824/pexels-photo-5480824.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Imagen 3" width="380" height="250">
             </div>
         </div>
-        </div>
+        
         <div class="container">
             <div class="row">
-                <h3 class="centered-title">La Isla</h3>
-                <p>
+                <div calss = "col-7">
+                    <h3 class="centered-title">La Isla</h3>
+                    <p>
                     La Isla es un espacio donde podrás desconectarte de los ruidos de la ciudad y disfrutar una flora 
                     y fauna auténtica y rica. No solo te entretendrás con los dinasaruios sino también con disintos mamíferos,
                     anfibios, reptiles y aves de todos los colores y tamaños. 
@@ -76,11 +96,90 @@
 
                     Adicionalmente, la Isla cuenta como un cómodo hotel y restaurante para poder vivir la mejor experiencia junto con los dinosaurios.
                     
-                </p>
+                    </p>
+                </div> 
 
             </div>
 
         </div>
+
+        <div class="contenedor">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/2346015/pexels-photo-2346015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Imagen 1" width="380" height="250">
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <h4 class="centered-title">Alojamiento</h4>
+                <p>
+                    Para vivir la experiencia en Jurassic Park de la mejor manera es ideal permanecer en la isla 3 días. 
+                    Hay distintas opciones de alojamiento, puedes quedarte en un hotel cerca al puerto de la isla, 
+                    en unas cabañas sobre el mar o acampar al interior de la selva donde estarás en contacto con los dinosaurios.
+                </p>
+              </div>
+              <div class="col-4">
+                <h4 class="centered-title">El Clima </h4>
+                <p>
+                    El clima de la Isla es húmedo tropical, llueve con mucha frecuencia y durante el día 
+                    la temperatura está entro los 25 y 30 grados centígrados. 
+                    Por las noches es fresco y podrás descansar sin porblema del día de aventura.
+                </p>
+              </div>
+              <div class="col-4">
+                <h4 class="centered-title">Trasporte</h4>
+                <p>
+                    Para llegar a la Isla hay distintos medios de trasporte, podrás llegar en avioneta, hay un vuelo diario,
+                    otra opción es llegar en ferry, estas embarcaciones son grandes y hacen 3 recorridos diarios. 
+                    La última opción es viajar en lancha, es la opción más rápida y podrás organizar la hora de llegada y salida.
+
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="row">
+                <div class="col-6">
+
+                    <div class="card text-center mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Notificaciones</h5>
+                          <p class="card-text">Entérate de los descuentos y nuevos paquetes promocionales para visitar la Isla</p>
+                          <a href="#" class="btn btn-primary">Quiero recibir notificaciones</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <h4 class="centered-title">Actividades Imperdibles</h4>
+                        <li>Nadar con los dinosuarios en el lago</li>
+                        <li>Amanecer/Atardecer sobre el volcán</li>
+                        <li>Fogata y noche de estrellas</li>
+                        <li>Bañar a los dinosauiros bebés en el río</li>
+                        <li>Paracaídas sobre el volcán</li>
+                        <li>Acompañamiento de dinosaurios acuáticos recién 
+                            nacidos al mar
+                        </li>
+                      </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/2162670/pexels-photo-2162670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Imagen 1" width="380" height="250">
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/10004366/pexels-photo-10004366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Imagen 2" width="380" height="250">
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/2161547/pexels-photo-2161547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Imagen 3" width="380" height="250">
+            </div>
+        </div>
+        
             
         
     </body>
