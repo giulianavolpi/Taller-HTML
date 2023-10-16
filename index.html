@@ -5,42 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurassic Park</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <style>
         body {
-            background-color: rgb(249, 250, 209); /* Cambia este valor al color que desees */
+            background-color: rgb(249, 250, 209); 
           }
         .image-container {
-            display: flex; /* Hace que los elementos hijos se coloquen en una fila */
-            justify-content: space-between; /* Distribuye las imágenes horizontalmente */
-            align-items: center; /* Centra verticalmente las imágenes */
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
         }
 
         .image {
-            width: 30%; /* Ajusta el ancho de las imágenes según tus necesidades */
-            padding: 10px; /* Agrega un espacio entre las imágenes si lo deseas  */
+            width: 30%; 
+            padding: 10px; 
         }
-        .centered-title {
+        .titulo-h1 {
             text-align: center;
+            color :rgb(138,44, 6);
+        }
+        .titulo-h2 {
+            text-align: center;
+            color :rgb(187,63, 13);
+        }
+        .titulo-h3 {
+            text-align: center;
+            color :rgb(6,84, 138);
+        }
+        .titulo-h4 {
+            text-align: center;
+            color :rgb(35,170, 178);
+        }
+        .titulo-h42 {
+            text-align: center;
+            color :rgb(143, 137, 216);
         }
         .contenedor {
             display: flex;
-            justify-content: center; /* Centrar horizontalmente */
-            align-items: center; /* Centrar verticalmente */
-            height: 300px; /* Establece la altura del contenedor según tus necesidades */
+            justify-content: center; 
+            align-items: center; 
+            height: 300px; 
           }
         .card {
-            /* Estilos de tu tarjeta, por ejemplo: */
+            
             width: 300px;
             padding: 20px;
-            background-color: #f0f0f0;
+            background-color: rgb(115, 206, 225);
             border: 1px solid #ccc;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .card-button {
+            background-color: rgb(237, 242, 243); 
+            color: rgb(0, 0, 0); 
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
         }
     </style>
 </head>
     <body>
-        <h1 class="centered-title">Bienvenidos a Jurassic Park</h1>
+        <h1 class="titulo-h1">Bienvenidos a Jurassic Park</h1>
         <div class="container">
             <div class="row">
                 <div class="col-5">
@@ -68,7 +92,7 @@
                 </div>
             </div>
         </div>
-            <h2 class="centered-title">Conoce nuestros planes de viaje</h2>
+            <h2 class="titulo-h2">Conoce nuestros planes de viaje</h2>
             
             <div class="image-container">
             <div class="image">
@@ -85,7 +109,7 @@
         <div class="container">
             <div class="row">
                 <div calss = "col-7">
-                    <h3 class="centered-title">La Isla</h3>
+                    <h3 class="titulo-h3">La Isla</h3>
                     <p>
                     La Isla es un espacio donde podrás desconectarte de los ruidos de la ciudad y disfrutar una flora 
                     y fauna auténtica y rica. No solo te entretendrás con los dinasaruios sino también con disintos mamíferos,
@@ -112,7 +136,7 @@
         <div class="container">
             <div class="row">
               <div class="col-4">
-                <h4 class="centered-title">Alojamiento</h4>
+                <h4 class="titulo-h4">Alojamiento</h4>
                 <p>
                     Para vivir la experiencia en Jurassic Park de la mejor manera es ideal permanecer en la isla 3 días. 
                     Hay distintas opciones de alojamiento, puedes quedarte en un hotel cerca al puerto de la isla, 
@@ -120,7 +144,7 @@
                 </p>
               </div>
               <div class="col-4">
-                <h4 class="centered-title">El Clima </h4>
+                <h4 class="titulo-h4">El Clima </h4>
                 <p>
                     El clima de la Isla es húmedo tropical, llueve con mucha frecuencia y durante el día 
                     la temperatura está entro los 25 y 30 grados centígrados. 
@@ -128,7 +152,7 @@
                 </p>
               </div>
               <div class="col-4">
-                <h4 class="centered-title">Trasporte</h4>
+                <h4 class="titulo-h4">Trasporte</h4>
                 <p>
                     Para llegar a la Isla hay distintos medios de trasporte, podrás llegar en avioneta, hay un vuelo diario,
                     otra opción es llegar en ferry, estas embarcaciones son grandes y hacen 3 recorridos diarios. 
@@ -146,14 +170,14 @@
                         <div class="card-body">
                           <h5 class="card-title">Notificaciones</h5>
                           <p class="card-text">Entérate de los descuentos y nuevos paquetes promocionales para visitar la Isla</p>
-                          <a href="#" class="btn btn-primary">Quiero recibir notificaciones</a>
+                          <button class="card-button">Notifícame</button>
                         </div>
                     </div>
 
                 </div>
                 <div class="col-6">
                     <ul>
-                        <h4 class="centered-title">Actividades Imperdibles</h4>
+                        <h4 class="titulo-h42">Actividades Imperdibles</h4>
                         <li>Nadar con los dinosuarios en el lago</li>
                         <li>Amanecer/Atardecer sobre el volcán</li>
                         <li>Fogata y noche de estrellas</li>
