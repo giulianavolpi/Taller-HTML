@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Jurassic Park</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -61,6 +63,43 @@
             padding: 10px 20px;
             cursor: pointer;
         }
+
+        @media (max-width: 768px) {
+            .contenedor {
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                height: 350px; 
+              }
+            .card {
+                
+                width: 200px;
+                padding: 10px;
+                background-color: rgb(115, 206, 225);
+                border: 1px solid #ccc;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+            .card-button {
+                background-color: rgb(237, 242, 243); 
+                color: rgb(0, 0, 0); 
+                border: none;
+                border-radius: 5px;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+            .image-container {
+                display: flex; 
+                justify-content: space-between; 
+                align-items: center; 
+                padding: 5px; 
+            }
+    
+            .image {
+                width: 30%; 
+                padding: 5px; 
+            }
+            
+          }
     </style>
 </head>
     <body>
